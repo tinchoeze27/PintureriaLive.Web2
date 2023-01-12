@@ -142,4 +142,10 @@ main[b-802x7c0u3p] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
+    
+    .nav-scrollable[b-ij31xhfmt4] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
 }

@@ -23,7 +23,7 @@ jobs:
     - name: Publish .NET Core Project
       run: dotnet publish PintureriaLive/PintureriaLive.csproj -c Release -o release --nologo
     
-    # changes the base-tag in index.html from '/' to 'PintureriaLive' to match GitHub Pages repository subdirectory
+    # changes the base-tag in index.html from '/' to 'PintureriaLive.Web' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to PintureriaLive
       run: sed -i 's/<base href="\/" \/>/<base href="\/PintureriaLive.Web\/" \/>/g' release/wwwroot/index.html
     
